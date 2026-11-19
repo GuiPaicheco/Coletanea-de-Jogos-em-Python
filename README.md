@@ -28,7 +28,7 @@ Crie a branch com `git switch -c oficina/minha-versao`. Copie um modelo ou comec
 
 No VS Code, uma pessoa digita e a outra acompanha, faz perguntas e testa. Troquem os papéis depois da primeira melhoria. Para colaborar em computadores diferentes, usem [VS Code Live Share](https://learn.microsoft.com/en-us/visualstudio/liveshare/use/vscode) ou compartilhem a tela. Com Live Share, quem hospeda inicia a sessão e envia o convite à dupla. Os commits são feitos na cópia de quem hospeda.
 
-**Exemplo de tarefa:** adicionar um som de colisão. O teste de aceitação é ouvir o som uma vez por colisão e conseguir reiniciar a rodada. Fontes para a oficina: [imagens 2D • Kenney Platformer Kit](https://kenney.nl/assets/platformer-kit) e [sons • Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds). Registre a fonte e a licença de cada material usado no README do jogo.
+**Exemplo de tarefa:** adicionar um som de colisão. O teste de aceitação é ouvir o som uma vez por colisão e conseguir reiniciar a rodada. Fontes para a oficina: [imagens 2D • Kenney New Platformer Pack](https://kenney.nl/assets/new-platformer-pack) e [sons • Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds). Registre a fonte e a licença de cada material usado no README do jogo.
 
 ## 3. Envie, revise e integre
 
