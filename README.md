@@ -1,48 +1,32 @@
 # Coletânea de Jogos em Python
 
-Modelos jogáveis feitos para os alunos da oficina **Criação de Jogos com Python** do IFMG, Campus Ibirité. Use os arquivos como ponto de partida para estudar, editar e criar suas próprias versões. Cada jogo roda em um único arquivo e usa apenas formas desenhadas pelo pygame-ce.
+Repositório da oficina **Criação de Jogos com Python**, realizada na **Semana Nacional de Ciência e Tecnologia (SNCT)** do **IFMG – Campus Ibirité**, com Guilherme Paicheco e Ítalo Gabriel.
 
-## Missão da equipe
+Na oficina, vamos usar a biblioteca **pygame-ce** para criar jogos em Python e simular como várias pessoas podem contribuir para um mesmo repositório no GitHub. Cada participante desenvolve seu próprio jogo e o compartilha com a turma em uma pasta própria.
 
-Simule um ciclo de trabalho de um estúdio de jogos. Em duplas ou equipes, escolham uma melhoria para um modelo ou criem um jogo novo. Definam um resultado que outra pessoa consiga testar. Alternem quem programa e quem acompanha no VS Code. Outra pessoa revisa o PR antes do merge.
+| Pasta | O que você encontra |
+| --- | --- |
+| [jogos](jogos/) | Modelos jogáveis para testar, estudar e usar como ponto de partida. |
+| [seus jogos aqui](seus%20jogos%20aqui/) | Espaço para publicar os jogos individuais criados durante a oficina. |
 
-## 1. Prepare o ambiente e rode um modelo
+## Como participar
 
-Crie sua conta em [GitHub Sign up](https://github.com/signup), confirme o e-mail e entre na sua conta. Quem já tem conta pode ir direto ao botão **Fork** neste repositório. No seu fork, abra **Code → HTTPS** e copie o endereço. Substitua `SEU_USUARIO` no exemplo.
+1. Explore os modelos em [jogos](jogos/) e escolha um para adaptar ou crie um jogo do zero.
+2. No GitHub, clique em **Fork** para criar uma cópia do repositório na sua conta.
+3. No seu fork, coloque os arquivos do jogo em uma subpasta com seu usuário, por exemplo, `seus jogos aqui/seu-usuario/nome-do-jogo/`. Inclua os controles e as instruções para rodar o jogo em um `README.md` dentro dessa subpasta.
+4. Abra um **pull request** para este repositório. Informe o nome do jogo, como executá-lo e o que você testou. Os ministrantes podem revisar a contribuição e incorporá-la à coletânea.
+
+## Como rodar um modelo
+
+No Windows, abra o PowerShell na pasta do repositório e execute:
 
 ```powershell
-git --version
-py --version
-git clone https://github.com/SEU_USUARIO/Coletanea-de-Jogos-em-Python.git
-cd Coletanea-de-Jogos-em-Python
 py -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe jogos/06_desvie.py
 ```
 
-`clone` baixa o código e seu histórico, `venv` cria o ambiente isolado e `pip install -r` instala as dependências da lista. No VS Code, abra a pasta em **Arquivo → Abrir Pasta**, instale a extensão **Python** da Microsoft e selecione o interpretador da `.venv` com **Python: Select Interpreter**. Em macOS/Linux, crie a venv com `python3 -m venv .venv` e use `.venv/bin/python` nos dois últimos comandos.
-
-## 2. Desenvolva em dupla
-
-Crie a branch com `git switch -c oficina/minha-versao`. Copie um modelo ou comece um jogo em `contribuicoes/SEU_USUARIO/nome-do-jogo/main.py`. Registre os controles e o comando de execução em um README nessa pasta. Separe os recursos, se usados, em `assets/` dentro dela.
-
-No VS Code, uma pessoa digita e a outra acompanha, faz perguntas e testa. Troquem os papéis depois da primeira melhoria. Para colaborar em computadores diferentes, usem [VS Code Live Share](https://learn.microsoft.com/en-us/visualstudio/liveshare/use/vscode) ou compartilhem a tela. Com Live Share, quem hospeda inicia a sessão e envia o convite à dupla. Os commits são feitos na cópia de quem hospeda.
-
-**Exemplo de tarefa:** adicionar um som de colisão. O teste de aceitação é ouvir o som uma vez por colisão e conseguir reiniciar a rodada. Fontes para a oficina: [imagens 2D • Kenney New Platformer Pack](https://kenney.nl/assets/new-platformer-pack) e [sons • Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds). Registre a fonte e a licença de cada material usado no README do jogo.
-
-## 3. Envie, revise e integre
-
-```powershell
-git status
-git add contribuicoes/SEU_USUARIO/nome-do-jogo/
-git diff --cached
-git commit -m "Adiciona minha versão do jogo"
-git push -u origin oficina/minha-versao
-```
-
-Confirme com `git remote -v` que `origin` aponta para seu **fork**. Se o primeiro commit pedir identidade, configure `git config user.name "Seu nome"` e `git config user.email "Seu e-mail de commit"` na pasta do repositório.
-
-No GitHub, abra o **Pull request** com **base** `GuiPaicheco/Coletanea-de-Jogos-em-Python:main` e **compare** `SEU_USUARIO:oficina/minha-versao`. Conte o que mudou, como rodar e o que você testou. O colega revisa **Files changed**, roda o jogo e deixa feedback. Para corrigir, faça outro commit na mesma branch e use `git push`. O mantenedor demonstra o **merge** após revisão e teste. Se houver conflito, a equipe combina quais alterações preservar e volta a testar antes de integrar.
+Em macOS ou Linux, use `python3 -m venv .venv` no primeiro comando e `.venv/bin/python` no lugar de `.\.venv\Scripts\python.exe` nos demais.
 
 ## Escolha um modelo
 
